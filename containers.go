@@ -97,9 +97,10 @@ $ cx containers exec -s mystack --docker-flags="--interactive=false --tty=false 
 			Name:   "attach",
 			Action: runContainerAttach,
 			Usage:  "Attach to a container on the given stack",
-			Description: `Attach to a container on the given stack by container Id.
+			Description: `Attach to a container on the given stack by container Id or Name.
 Examples:
 $ cx containers attach -s mystack 2844142c
+$ cx containers attach -s mystack web.pro-active-quick-witted-dinosaur
 `,
 		},
 	}
